@@ -22,7 +22,8 @@ sudo mount.cifs //10.108.160.36/sae /mnt/sae -o user=vpit
 # Mount SAE Archive drive
 sudo mkdir /mnt/saearchive
 sudo mount.cifs //10.108.160.36/saearchive /mnt/saearchive -o user=vpit
-Mount SAE drive
+
+# Mount SAE drive
 sudo mkdir /mnt/sae
 sudo mount.cifs //10.108.160.36/sae /mnt/sae -o user=vpit
 
