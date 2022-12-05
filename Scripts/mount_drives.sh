@@ -33,9 +33,6 @@ sudo mount.cifs //10.108.160.36/saearchive /mnt/saearchive -o user=vpit
 # Mount ENCS drive
 sudo mkdir /mnt/unixdrive
 sudo sshfs -o allow_other,default_permissions z_zalass@login.encs.concordia.ca:/home/z/z_zalass /mnt/unixdrive
-# Mount ENCS drive
-sudo mkdir /mnt/unixdrive
-sudo sshfs -o allow_other,default_permissions z_zalass@login.encs.concordia.ca:/home/z/z_zalass /mnt/unixdrive
 
 # Install OneDrive 
 wget -qO - https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_22.04/Release.key | gpg --dearmor | sudo tee /usr/share/keyrings/obs-onedrive.gpg > /dev/null
