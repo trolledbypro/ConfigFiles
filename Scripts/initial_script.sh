@@ -3,13 +3,18 @@
 # Initial packages
 sudo apt update
 sudo apt upgrade -y
-sudo apt install -y git
 sudo apt install -y gcc
 sudo apt install -y vlc
 sudo apt install -y snapd
 sudo apt install -y remminna
 sudo snap install thunderbird
 sudo snap install spotify
+
+# Get git
+sudo apt install -y git
+git config --global user.name "Zachary Zalass"
+git config --global user.name "zachzalass@gmail.com"
+git clone https://github.com/trolledbypro/AERO-482-Project.git ~/
 
 # Install Visual Studio Code and MS Teams
 sudo apt install software-properties-common apt-transport-https
