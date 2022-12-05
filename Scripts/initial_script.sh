@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Put this in home directory
+
 # Initial packages
 sudo apt update
 sudo apt upgrade -y
@@ -33,4 +35,4 @@ sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 2
 sudo update-alternatives --config python3
 
-source mount_drives.sh
+source ~/mount_drives.sh
