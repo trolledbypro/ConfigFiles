@@ -35,4 +35,5 @@ sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 2
 sudo update-alternatives --config python3
 
+chmod u+x ~/Scripts/mount_drives.sh
 source ~/Scripts/mount_drives.sh
