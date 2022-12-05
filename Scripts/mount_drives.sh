@@ -1,9 +1,11 @@
 #!/bin/bash
 
 # Install the packages
+sudo add-apt-repository ppa:jstaf/onedriver
 sudo apt update
 sudo apt install cifs-utils
 sudo apt install sshfs
+sudo apt install onedriver
 
 # Mount SAE drive
 sudo mkdir /mnt/sae
