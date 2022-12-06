@@ -51,7 +51,6 @@ test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
 test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 brew install jandedobbeleer/oh-my-posh/oh-my-posh
 brew update && brew upgrade oh-my-posh
-exec bash
 
 # Install Python 3.11
 sudo add-apt-repository ppa:deadsnakes/ppa
