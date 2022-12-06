@@ -43,3 +43,5 @@ sudo apt install -y --no-install-recommends --no-install-suggests onedrive
 onedrive --synchronize
 systemctl --user enable onedrive
 systemctl --user start onedrive
+
+sudo reboot
