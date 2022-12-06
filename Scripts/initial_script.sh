@@ -24,11 +24,12 @@ sudo apt install -y git
 ssh-keygen -t ed25519 -C "zachzalass@gmail.com"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
-git config --global user.name "Zachary Zalass"
-git config --global user.name "zachzalass@gmail.com"
 mkdir ~/Source
 git clone https://github.com/trolledbypro/ConfigFiles.git ~/Source/ConfigFiles
-git checkout -b Linux
+cd ~/Source/ConfigFiles
+git config --global user.name "Zachary Zalass"
+git config --global user.name "zachzalass@gmail.com"
+git checkout Linux
 git pull
 sudo cp -a ~/Source/ConfigFiles/. ~/
 
