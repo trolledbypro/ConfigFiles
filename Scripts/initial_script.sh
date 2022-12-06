@@ -1,6 +1,11 @@
 #!/bin/bash
 
 # Put this in home directory
+# Things you need to do manually:
+# 1. Setup browser to access github.com
+# 2. Upload ssh public key to Github
+# 3. Setup VSCode and Thunderbird
+# 4. Clone the repos you need
 
 # Initial packages
 sudo apt update
@@ -15,6 +20,9 @@ sudo apt install -y curl
 
 # Get git
 sudo apt install -y git
+ssh-keygen -t ed25519 -C "zachzalass@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
 git config --global user.name "Zachary Zalass"
 git config --global user.name "zachzalass@gmail.com"
 mkdir ~/Source
