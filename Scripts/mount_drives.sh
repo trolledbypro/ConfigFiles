@@ -23,17 +23,13 @@ sudo mount.cifs //10.108.160.36/sae /mnt/sae -o user=vpit
 sudo mkdir /mnt/saearchive
 sudo mount.cifs //10.108.160.36/saearchive /mnt/saearchive -o user=vpit
 
-# Mount SAE drive
-sudo mkdir /mnt/sae
-sudo mount.cifs //10.108.160.36/sae /mnt/sae -o user=vpit
-
-# Mount SAE Archive drive
-sudo mkdir /mnt/saearchive
-sudo mount.cifs //10.108.160.36/saearchive /mnt/saearchive -o user=vpit
-
 # Mount ENCS drive
 sudo mkdir /mnt/unixdrive
 sudo sshfs -o allow_other,default_permissions z_zalass@login.encs.concordia.ca:/home/z/z_zalass /mnt/unixdrive
+
+# Mount zalserv
+sudo mkdir /mnt/zalserv
+sudo sshfs -o allow_other,default_permissions server@zalserv:/home/server/shared /mnt/zalserv
 
 # Install OneDrive 
 wget -qO - https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_22.04/Release.key | gpg --dearmor | sudo tee /usr/share/keyrings/obs-onedrive.gpg > /dev/null
