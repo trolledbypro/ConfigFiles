@@ -11,6 +11,7 @@
 sudo apt update
 sudo apt upgrade -y
 sudo apt install -y gcc
+sudo apt install -y p7zip-full
 sudo apt install -y vlc
 sudo apt install -y snapd
 sudo apt install -y remmina
